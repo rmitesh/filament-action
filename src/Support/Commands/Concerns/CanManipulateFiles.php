@@ -25,7 +25,7 @@ trait CanManipulateFiles
     {
         $filesystem = app(Filesystem::class);
 
-        $stubPath = base_path("stubs/{$stub}.stub");
+        $stubPath = __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . "stubs/{$stub}.stub";
 
         $stub = Str::of($filesystem->get($stubPath));
 
