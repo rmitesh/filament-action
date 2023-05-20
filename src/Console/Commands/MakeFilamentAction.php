@@ -37,7 +37,7 @@ class MakeFilamentAction extends Command
         $resourceNamespace = config('filament.resources.namespace', 'App\\Filament\\Resources');
 
         // Resouce Name
-        $resource = (string) Str::of($this->argument('resource') ?? $this->askRequired('Resource (e.g. `DepartmentResource`)', 'resource'))
+        $resource = (string) Str::of($this->argument('resource') ?? $this->askRequired('Resource (e.g. `UserResource`)', 'resource'))
             ->studly()
             ->trim('/')
             ->trim('\\')
