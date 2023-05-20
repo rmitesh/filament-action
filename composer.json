@@ -1,0 +1,20 @@
+{
+    "name": "rmitesh/filament-action",
+    "description": "Creates a Filament table action.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["rmitesh", "laravel", "filament", "filament-action"],
+    "autoload": {
+        "psr-4": {
+            "Rmitesh\\FilamentAction\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mitesh Rathod",
+            "email": "meet.drive32@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

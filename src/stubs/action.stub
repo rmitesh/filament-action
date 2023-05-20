@@ -1,0 +1,52 @@
+<?php
+
+namespace {{ namespace }};
+
+use Closure;
+use Filament\Forms;
+use Filament\Tables\Actions\Action;
+use Illuminate\Contracts\Support\Htmlable;
+
+class {{ className }} extends Action
+{
+	protected string | Closure | null $icon = 'heroicon-o-code';
+
+	protected string | Htmlable | Closure | null $label = '{{ name }}';
+
+	protected ?string $notificationTitle = 'Saved';
+
+	public static function getDefaultName(): ?string
+	{
+	    return '{{ label }}';
+	}
+
+	public function setForm(): array
+	{
+	    return [
+	    	Forms\Components\TextInput::make('{{ label }}')
+	    	    ->required()
+	    	    ->maxLength(255),
+	    ];
+	}
+
+	protected static function setAction(): Closure
+	{
+		return function (): void {
+			//
+		};
+	}
+
+	protected function setUp(): void
+	{
+	    parent::setUp();
+
+		$this->form(static::setForm());
+
+		// mount data
+		// $this->mountUsing();
+
+		$this->action(static::setAction());
+
+        $this->successNotificationTitle($this->notificationTitle);
+	}
+}
