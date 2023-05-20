@@ -32,9 +32,9 @@ public static function table(Table $table): Table
 		])
 }
 ```
-![image](https://github.com/rmitesh/filament-action/assets/48554454/c51cdfbb-78ec-491b-8aae-7f5b8dd16992)
+![image](https://github.com/rmitesh/filament-action/assets/48554454/f3e051b6-41f3-4b2b-b2a6-c7c8752d2014)
 
-![image](https://github.com/rmitesh/filament-action/assets/48554454/158c008a-7197-4ed1-82a3-25c5aa615a20)
+![image](https://github.com/rmitesh/filament-action/assets/48554454/469cb0db-5079-4b5c-b30f-3bf75e537c3d)
 
 You can use same methods available in the <a href="https://filamentphp.com/docs/2.x/tables/actions">Filament Table Action</a>
 
