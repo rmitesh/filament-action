@@ -16,5 +16,12 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {}
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Rmitesh\\FilamentAction\\FilamentServiceProvider"
+            ]
+        }
+    },
 }
