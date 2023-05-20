@@ -3,7 +3,7 @@
 namespace Rmitesh\FilamentAction;
 
 use Illuminate\Support\ServiceProvider;
-use Rmitesh\FilamentAction\Commands\MakeFilamentAction;
+use Rmitesh\FilamentAction\Console\Commands\MakeFilamentAction;
 
 class FilamentActionServiceProvider extends ServiceProvider
 {
